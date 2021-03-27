@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/sunvest">
+        <Route exact path="/">
           <Sunvest />
         </Route>
         <Route exact path="/market">
