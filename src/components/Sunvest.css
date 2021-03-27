@@ -1,0 +1,47 @@
+#navbard{
+max-width: 1024px !important;
+margin:0 auto;
+}
+.bg-env{
+    background-image: url("../components/assets/bgfin.jpg");
+}
+.group-side{
+    max-width: 1024px !important;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    flex-flow:wrap;
+    padding-top: 50px;
+    color: azure;
+}
+.center-text, .row{
+    max-width: 1024px !important;
+    margin:0 auto;
+    margin-top: 30px;
+    text-align:center;
+}
+.div-center{
+    max-width: 1024px !important;
+    margin:0 auto;
+    margin-top: 60px;
+    text-align:center;
+}
+.set-div{
+    max-width: 1024px !important;
+    margin:0 auto;
+    margin-top: 60px;
+    text-align:center;
+}
+ .footer{
+  background-color: rgb(0, 102, 255);  
+  margin-top: 60px;
+}
+.flex-footer{
+    max-width: 1024px !important;
+    margin:0 auto;
+    padding-top: 60px;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    flex-flow:wrap;
+}
