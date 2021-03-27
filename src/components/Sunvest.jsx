@@ -1,14 +1,15 @@
 import React from "react";
 import "./Sunvest.css";
+import {Link} from "react-router-dom";
 
 function Sunvest() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid " id="navbard">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+          <Link className="navbar-brand" href="#">
+            SunVest.Energy
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,19 +24,19 @@ function Sunvest() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" href="#">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
+                <Link to="/market" className="nav-link" href="#">
+                  Marketplace
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
-                </a>
+                <Link className="nav-link" href="#">
+                  About
+                </Link>
               </li>
             </ul>
           </div>
