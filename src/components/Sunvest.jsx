@@ -1,47 +1,13 @@
 import React from "react";
 import "./Sunvest.css";
-import {Link} from "react-router-dom";
+import Header from "../components/common/Header";
+import Footer from "../components/common/Footer";
+
 
 function Sunvest() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid " id="navbard">
-          <Link className="navbar-brand" href="#">
-            SunVest.Energy
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/market" className="nav-link" href="#">
-                  Marketplace
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="#">
-                  About
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+     <Header/>
       <div >
        <div className="bg-env">
        <div className="group-side">
@@ -585,36 +551,7 @@ function Sunvest() {
           with the support of our professional onboarding team.{" "}
         </p>
       </div>
-      <div className="footer">
-        <div className="flex-footer">
-          <div>
-            <h3>SunVest Energy</h3>
-            <p>
-              Join us in the revolution to help Nigerian businesses escape power
-              protection and run more profitably.
-            </p>
-          </div>
-          <div>
-            <h3>Main Menu</h3>
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact Us</li>
-              <li>Sign In</li>
-              <li>Sign Up</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Contact Us</h3>
-            <h4>Address</h4>
-            <p>No.13, Abike Jologbola Street, Sholebo Estate Ikorodu, Lagos</p>
-            <h4>Email</h4>
-            <p>info@sunvest.energy</p>
-            <h4>Address</h4>
-            <p>+2349087342780</p>
-          </div>
-        </div>
-      </div>
+      <Footer/>
     </div>
   );
 }

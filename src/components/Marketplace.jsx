@@ -1,8 +1,11 @@
 import React from "react";
+import Footer from "../components/common/Footer";
+import Header from "../components/common/Header";
 
 function Marketplace() {
   return (
     <div>
+        <Header/>
       <div>
         <p>Top Selling</p>
         <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -183,6 +186,7 @@ function Marketplace() {
         </div>
       </div>
       </div>
+      <Footer/>
     </div>
     
   );
