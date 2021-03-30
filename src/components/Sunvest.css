@@ -1,50 +1,86 @@
-#navbard{
-max-width: 1024px !important;
-margin:0 auto;
+#navbard {
+  max-width: 1024px !important;
+  margin: 0 auto;
 }
-.bg-env{
-    background-image: url("../components/assets/bgfin.jpg");
+.bg-env {
+  background-image: url("../components/assets/bgfin.png");
+  height:100vh;
 }
-.group-side{
-    max-width: 1024px !important;
-    margin:0 auto;
-    display:flex;
-    justify-content:space-between;
-    flex-flow:wrap;
-    padding-top: 50px;
-    color: azure;
+.group-side {
+  max-width: 1024px !important;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  padding-top: 50px;
+  color: azure;
 }
-.center-text, .row{
-    max-width: 1024px !important;
-    margin:0 auto;
-    margin-top: 30px;
-    text-align:center;
+.center-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-flow: wrap; */
 }
-.div-center{
-    max-width: 1024px !important;
-    margin:0 auto;
-    margin-top: 60px;
-    text-align:center;
+.card-body{
+    border:0px solid;
 }
-.set-div{
-    max-width: 1024px !important;
-    margin:0 auto;
-    margin-top: 60px;
-    text-align:center;
+.card-body:hover {
+  background-color: rgba(49, 94, 251, 1);
+  color: white;
+  border-radius: 10px;
+  border:0px;
 }
-li{
-    list-style-type: none;
+.center-text,
+.row {
+  max-width: 1024px !important;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
 }
- .footer{
-  background-color: rgb(0, 102, 255);  
+.div-center {
+  max-width: 1024px !important;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+ background-color:  rgba(255, 255, 255, 1);
+}
+.navbar{
+    background-color: transparent;
+}
+.div-center h2{
+margin-bottom: 40px;
+font-size: 20px;
+}
+.set-div {
+  max-width: 1024px !important;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+}
+.set-div h3{
+    color: rgba(49, 94, 251, 1);
+}
+li {
+  list-style-type: none;
+}
+.footer {
+   background-color:  rgba(72, 52, 196, 1);
   margin-top: 60px;
 }
-.flex-footer{
-    max-width: 1024px !important;
-    margin:0 auto;
-    padding-top: 60px;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    flex-flow:wrap;
+.flex-footer {
+  max-width: 1024px !important;
+  margin: 0 auto;
+  padding-top: 60px;
+  color: white;
+  display: flex;
+  font-size:15px;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.flex-footer h3{
+    text-align: left;
+}
+.flex-form{
+    display: flex;
+    justify-content: space-evenly;
 }

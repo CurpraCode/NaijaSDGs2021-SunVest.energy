@@ -1,12 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {ReactComponent as Star} from "../../components/assets/star.svg";
 
 function Header() {
   return (
        <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid " id="navbard">
-    <Link className="navbar-brand" href="#">
-      SunVest.Energy
+    <Link className="navbar-brand" to="/">
+     <Star/> SunVest.Energy
     </Link>
     <button
       className="navbar-toggler"

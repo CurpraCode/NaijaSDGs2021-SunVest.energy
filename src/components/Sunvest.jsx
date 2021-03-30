@@ -2,84 +2,86 @@ import React from "react";
 import "./Sunvest.css";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-
+import BodyFlex from "../components/common/BodyFlex";
+import { ReactComponent as Bitcoin } from "../components/assets/bitcoin.svg";
+import { ReactComponent as Ball } from "../components/assets/ball.svg";
+import { ReactComponent as Down } from "../components/assets/downarrow.svg";
+import { ReactComponent as Open } from "../components/assets/open-source.svg";
+import { Link } from "react-router-dom";
 
 function Sunvest() {
   return (
     <div>
-     <Header/>
-      <div >
-       <div className="bg-env">
-       <div className="group-side">
-          <div>
-            <p>Top energy investment company</p>
-            <h1>
-              Invest in Solar, <br /> Empower A business <br /> Earn a Profit.
-            </h1>
-            <h3>
-              Join us in the resolution to help Nigerian <br /> businesses
-              escape power problems and <br /> run more profitably.
-            </h3>
+      <div>
+        <div className="bg-env">
+          <Header />
+          <div className="group-side">
+            <BodyFlex />
 
-            <p>Learn more</p>
+            <div>
+              <form className="was-validated">
+                <div className="mb-3">
+                  <label for="validationTextarea" className="form-label">
+                    Get Started Now
+                  </label>
+                </div>
+
+                <div className="form-check">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationFormCheck2"
+                    placeholder="tunde wale"
+                    required
+                  />
+                </div>
+                <div className="form-check">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validationFormCheck2"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </div>
+
+                <div className="form-check">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="validationFormCheck2"
+                    placeholder="phone number"
+                    required
+                  />
+                </div>
+                <div className="form-check">
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="validationFormCheck2"
+                    placeholder="company"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <button className="btn btn-primary" type="submit" disabled>
+                    Sign Up
+                  </button>
+                </div>
+                <div>
+                  <p>
+                    Have and account already
+                    <Link to="login">
+                      <span>Sign In</span>
+                    </Link>
+                  </p>
+                </div>
+              </form>
+            </div>
           </div>
-
-          <div>
-            <form className="was-validated">
-              <div className="mb-3">
-                <label for="validationTextarea" className="form-label">
-                  Get Started Now
-                </label>
-              </div>
-
-              <div className="form-check">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationFormCheck2"
-                  placeholder="tunde wale"
-                  required
-                />
-              </div>
-              <div className="form-check">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="validationFormCheck2"
-                  placeholder="name@example.com"
-                  required
-                />
-              </div>
-            
-              <div className="form-check">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="validationFormCheck2"
-                  placeholder="phone number"
-                  required
-                />
-              </div>
-              <div className="form-check">
-                <input
-                  type="name"
-                  class="form-control"
-                  id="validationFormCheck2"
-                  placeholder="company"
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <button className="btn btn-primary" type="submit" disabled>
-                  Sign Up
-                </button>
-              </div>
-            </form>
-          </div>
-       </div>
         </div>
         <div className="center-text">
-          <img src="" alt="" />
+          <Bitcoin />
           <div>
             <h2>SunVest</h2>
             <p>
@@ -94,6 +96,7 @@ function Sunvest() {
           <div className="col">
             <div className="card">
               <div className="card-body">
+                <Open />
                 <h5 className="card-title">Sign Up</h5>
                 <p className="card-text">
                   Sign up with your details choose a project from the market
@@ -107,11 +110,13 @@ function Sunvest() {
           <div className="col">
             <div className="card">
               <div className="card-body">
+                <Ball />
                 <h5 className="card-title">Power a business</h5>
                 <p className="card-text">
                   Your investments goes into developing solar power
-                  infrastructure for malls, small business, schools hospital,
-                  as station and industries.beneficiary development phases on a personalised dashboard via or web and mobile platforms.
+                  infrastructure for malls, small business, schools hospital, as
+                  station and industries.beneficiary development phases on a
+                  personalised dashboard via or web and mobile platforms.
                 </p>
               </div>
             </div>
@@ -119,6 +124,7 @@ function Sunvest() {
           <div className="col">
             <div className="card">
               <div className="card-body">
+                <Down />
                 <h5 className="card-title">Earn a Profit</h5>
                 <p className="card-text">
                   You earn a guaranteed return on investment when you invest on
@@ -132,7 +138,9 @@ function Sunvest() {
         </div>
 
         <div className="div-center">
-          <h2>Let's Explore the Investments that are top-sellings</h2>
+          <h2>
+            Let's Explore the Investments that <br /> are top-sellings
+          </h2>
           <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li className="nav-item" role="presentation">
               <button
@@ -550,8 +558,20 @@ function Sunvest() {
           platform <br />
           with the support of our professional onboarding team.{" "}
         </p>
+        <div className="flex-form">
+          <input
+            type="email"
+            class="form-control"
+            id="validationFormCheck2"
+            placeholder="name@example.com"
+            required
+          />
+          <button className="btn btn-primary" type="submit" disabled>
+            Sign Up
+          </button>
+        </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
