@@ -4,7 +4,7 @@
 }
 .bg-env {
   background-image: url("../components/assets/bgfin.png");
-  height:100vh;
+  height: 100vh;
 }
 .group-side {
   max-width: 1024px !important;
@@ -15,20 +15,37 @@
   padding-top: 50px;
   color: azure;
 }
+.flex-image {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: rgb(213, 213, 213);
+}
+h2 {
+  color: rgb(52, 93, 196);
+}
+img {
+  margin-right: 60px;
+  width: 50%;
+  border-radius: 10px;
+}
 .center-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* flex-flow: wrap; */
 }
-.card-body{
-    border:0px solid;
+.card-body {
+  border: 0px solid;
 }
 .card-body:hover {
   background-color: rgba(49, 94, 251, 1);
   color: white;
   border-radius: 10px;
-  border:0px;
+  border: 0px;
+}
+.card {
+  text-align: center;
 }
 .center-text,
 .row {
@@ -42,14 +59,14 @@
   margin: 0 auto;
   margin-top: 60px;
   text-align: center;
- background-color:  rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
-.navbar{
-    background-color: transparent;
+.navbar {
+  background-color: transparent;
 }
-.div-center h2{
-margin-bottom: 40px;
-font-size: 20px;
+.div-center h2 {
+  margin-bottom: 40px;
+  font-size: 20px;
 }
 .set-div {
   max-width: 1024px !important;
@@ -57,14 +74,14 @@ font-size: 20px;
   margin-top: 60px;
   text-align: center;
 }
-.set-div h3{
-    color: rgba(49, 94, 251, 1);
+.set-div h3 {
+  color: rgba(49, 94, 251, 1);
 }
 li {
   list-style-type: none;
 }
 .footer {
-   background-color:  rgba(72, 52, 196, 1);
+  background-color: rgba(72, 52, 196, 1);
   margin-top: 60px;
 }
 .flex-footer {
@@ -73,14 +90,20 @@ li {
   padding-top: 60px;
   color: white;
   display: flex;
-  font-size:15px;
+  font-size: 15px;
   justify-content: space-between;
   flex-flow: wrap;
 }
-.flex-footer h3{
-    text-align: left;
+.flex-footer h3 {
+  text-align: left;
 }
-.flex-form{
+.flex-form {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+  .center-text {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+  }
 }
