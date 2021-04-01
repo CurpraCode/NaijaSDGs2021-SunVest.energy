@@ -2,7 +2,7 @@ import React from 'react'
 
 function BodyFlex() {
     return (
-        <div>
+        <div className="body">
         <p>Top energy investment company</p>
         <h1>
           Invest in Solar, <br /> Empower A business <br /> Earn a Profit.

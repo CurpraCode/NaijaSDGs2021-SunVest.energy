@@ -31,9 +31,10 @@ function Marketplace() {
         </div>
       </div>
       <div>
-        <p>Top Selling</p>
+        
         <div className="row row-cols-1 row-cols-md-3 g-4">
           <div className="col">
+          <p>Top Selling</p>
             <div className="card">
               <Top1/>
               <div className="card-body">
@@ -45,7 +46,7 @@ function Marketplace() {
                   currency. You can invest from anywhere in the world
                 </p>
                 <button type="button" class="btn btn-primary">
-                  Primary
+                  Details
                 </button>
               </div>
             </div>
@@ -62,7 +63,7 @@ function Marketplace() {
                   personalised dashboard via or web and mobile platforms.
                 </p>
                 <button type="button" class="btn btn-primary">
-                  Primary
+                Details
                 </button>
               </div>
             </div>
@@ -79,7 +80,7 @@ function Marketplace() {
                   dashboard via or web and mobile platforms.
                 </p>
                 <button type="button" class="btn btn-primary">
-                  Primary
+                Details
                 </button>
               </div>
             </div>
@@ -87,9 +88,10 @@ function Marketplace() {
         </div>
       </div>
       <div>
-        <p>Featured Project</p>
+        
         <div className="row row-cols-1 row-cols-md-3 g-4">
           <div className="col">
+          <p>Featured Project</p>
             <div className="card">
               <Feat1/>
               <div className="card-body">
@@ -101,7 +103,7 @@ function Marketplace() {
                   currency. You can invest from anywhere in the world
                 </p>
                 <button type="button" class="btn btn-primary">
-                  Primary
+                Details
                 </button>
               </div>
             </div>
@@ -118,7 +120,7 @@ function Marketplace() {
                   personalised dashboard via or web and mobile platforms.
                 </p>
                 <button type="button" class="btn btn-primary">
-                  Primary
+                Details
                 </button>
               </div>
             </div>
@@ -135,16 +137,17 @@ function Marketplace() {
                   dashboard via or web and mobile platforms.
                 </p>
                 <button type="button" class="btn btn-primary">
-                  Primary
+                Details
                 </button>
               </div>
             </div>
           </div>
         </div>
         <div>
-          <p>Other Projects</p>
+          
           <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col">
+            <p>Other Projects</p>
               <div className="card">
               <Other1/>
                 <div className="card-body">
@@ -156,7 +159,7 @@ function Marketplace() {
                     currency. You can invest from anywhere in the world
                   </p>
                   <button type="button" class="btn btn-primary">
-                    Primary
+                  Details
                   </button>
                 </div>
               </div>
@@ -173,7 +176,7 @@ function Marketplace() {
                     a personalised dashboard via or web and mobile platforms.
                   </p>
                   <button type="button" class="btn btn-primary">
-                    Primary
+                  Details
                   </button>
                 </div>
               </div>
@@ -190,7 +193,7 @@ function Marketplace() {
                     a personalised dashboard via or web and mobile platforms.
                   </p>
                   <button type="button" class="btn btn-primary">
-                    Primary
+                  Details
                   </button>
                 </div>
               </div>
@@ -207,7 +210,7 @@ function Marketplace() {
                     a personalised dashboard via or web and mobile platforms.
                   </p>
                   <button type="button" class="btn btn-primary">
-                    Primary
+                  Details
                   </button>
                 </div>
               </div>
@@ -224,7 +227,7 @@ function Marketplace() {
                     a personalised dashboard via or web and mobile platforms.
                   </p>
                   <button type="button" class="btn btn-primary">
-                    Primary
+                  Details
                   </button>
                 </div>
               </div>
@@ -241,7 +244,7 @@ function Marketplace() {
                     a personalised dashboard via or web and mobile platforms.
                   </p>
                   <button type="button" class="btn btn-primary">
-                    Primary
+                  Details
                   </button>
                 </div>
               </div>

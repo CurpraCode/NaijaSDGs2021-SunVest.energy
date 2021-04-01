@@ -18,7 +18,7 @@ function Footer() {
           </p>
           <Social />
         </div>
-        <div>
+        <div className="menu">
           <h3>Main Menu</h3>
           <ul>
             <li>Home</li>
@@ -28,7 +28,7 @@ function Footer() {
             <li>Sign Up</li>
           </ul>
         </div>
-        <div>
+        <div className="contact">
           <h3>Contact Us</h3>
           <h4>Address</h4>
           <p>No.13, Abike Jologbola Street, Sholebo Estate Ikorodu, Lagos</p>

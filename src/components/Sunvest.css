@@ -4,7 +4,61 @@
 }
 .bg-env {
   background-image: url("../components/assets/bgfin.png");
-  height: 100vh;
+  height: 120vh;
+}
+.outer-box {
+  margin-top: 5rem;
+}
+.card-sep {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  align-items: center;
+}
+.welll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(72, 52, 196, 1);
+  color: white;
+  padding: 2rem;
+  border-radius: 3rem;
+  flex-flow: wrap;
+}
+.wel {
+  display: flex;
+  align-items: center;
+}
+.p {
+  padding-top: 20px;
+  text-align: center;
+}
+.box {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
+  border-radius: 30px;
+  /* flex-flow: wrap; */
+}
+.box form {
+  margin-right: 60px;
+}
+.box input,
+textarea {
+  /* width:100%; */
+  padding: 0.6rem 1.3rem;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+.box button {
+  width: 100%;
+  border: 0px;
+  border-radius: 4px;
+  background-color: rgb(52, 93, 196);
+  color: white;
 }
 .group-side {
   max-width: 1024px !important;
@@ -12,12 +66,13 @@
   display: flex;
   justify-content: space-between;
   flex-flow: wrap;
-  padding-top: 50px;
+  align-items: center;
+  height: 100vh;
+  padding-top: 10px;
   color: azure;
 }
 .flex-image {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   background-color: rgb(213, 213, 213);
 }
@@ -47,6 +102,10 @@ img {
 .card {
   text-align: center;
 }
+.body h1,
+h3 {
+  font-size: 20px;
+}
 .center-text,
 .row {
   max-width: 1024px !important;
@@ -61,8 +120,13 @@ img {
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
 }
-.navbar {
-  background-color: transparent;
+.navbar-toggler {
+  border: 0px;
+}
+.navbar-toggler:focus {
+  border: 0px;
+  outline: none !important;
+  box-shadow: none;
 }
 .div-center h2 {
   margin-bottom: 40px;
@@ -101,9 +165,54 @@ li {
   display: flex;
   justify-content: space-evenly;
 }
+.menu {
+  margin-top: 30px;
+  font-size: 14px;
+}
+#pills-tab {
+  text-align: center;
+}
+.group-side {
+  align-items: center;
+}
+.contact {
+  margin-top: 30px;
+  font-size: 14px;
+}
 @media screen and (max-width: 768px) {
   .center-text {
     display: flex;
     flex-direction: column;
+    margin-top: 90px;
+  }
+  .flex-image {
+    display: flex;
+    flex-direction: column;
+  }
+  .body {
+    margin-bottom: 0px;
+  }
+  .group-side {
+    height: 100vh;
+    padding-bottom: 9rem;
+  }
+  .bit {
+    width: 70%;
+  }
+  .box {
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .box input,
+  textarea {
+    width: 100% !important;
+    padding: 0.6rem 1.3rem;
+    margin-bottom: 20px;
+    border-radius: 3px;
   }
 }

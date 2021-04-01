@@ -26,20 +26,20 @@ function Login() {
                    type="password"
                    class="form-control"
                    id="validationFormCheck2"
-                   placeholder="name@example.com"
+                   placeholder="password"
                    required
                  />
                </div>
            
                <div className="mb-1">
-                 <button className="btn btn-primary" type="submit" disabled>
+                 <button className="btn btn-primary" type="submit" >
                    Sign In
                  </button>
                </div>
                <div>
                   <p>
                     Have and account already
-                    <Link to="login">
+                    <Link to="/">
                       <span>Sign In</span>
                     </Link>
                   </p>

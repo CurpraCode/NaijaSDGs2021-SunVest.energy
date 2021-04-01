@@ -20,11 +20,11 @@ function Sunvest() {
 
             <div>
               <form className="was-validated">
-                <div className="mb-3">
-                  <label for="validationTextarea" className="form-label">
+               
+                  <p >
                     Get Started Now
-                  </label>
-                </div>
+                  </p>
+             
 
                 <div className="form-check">
                   <input
@@ -63,8 +63,8 @@ function Sunvest() {
                     required
                   />
                 </div>
-                <div className="mb-3">
-                  <button className="btn btn-primary" type="submit" disabled>
+                <div className="mb">
+                  <button className="btn btn-primary" type="submit">
                     Sign Up
                   </button>
                 </div>
@@ -81,7 +81,7 @@ function Sunvest() {
           </div>
         </div>
         <div className="center-text">
-          <Bitcoin />
+          <Bitcoin className="bit"/>
           <div>
             <h2>SunVest</h2>
             <p>
