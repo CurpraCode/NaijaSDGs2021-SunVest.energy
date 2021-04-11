@@ -6,7 +6,7 @@ function Header() {
   return (
        <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid " id="navbard">
-    <Link className="navbar-brand" to="/home">
+    <Link className="navbar-brand" to="/">
      <Star/> SunVest.Energy
     </Link>
     <button
@@ -40,6 +40,18 @@ function Header() {
         <li className="nav-item">
           <Link className="nav-link" to="/contact">
             Contact Us
+          </Link>
+        </li>
+        
+        <li className="nav-item">
+          <Link className="nav-link" to="/login">
+           Login
+          </Link>
+        </li>
+        
+        <li className="nav-item">
+          <Link className="nav-link" to="/signup">
+            Sign Up
           </Link>
         </li>
       </ul>
