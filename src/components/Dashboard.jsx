@@ -45,36 +45,16 @@ function Dashboard() {
                 >
                   DashBoard
                 </button>
-                <Link className="navbar-brand" to="/home">
+                <Link className="navbar-brand" to="/market">
                   <button class="nav-link" type="button">
                     MarketPlace
                   </button>
                 </Link>
-
-                <button
-                  class="nav-link"
-                  id="v-pills-messages-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-messages"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-messages"
-                  aria-selected="false"
-                >
-                  Profile
-                </button>
-                <button
-                  class="nav-link"
-                  id="v-pills-settings-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-settings"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-settings"
-                  aria-selected="false"
-                >
-                  Logout
-                </button>
+                <Link className="navbar-brand" to="/">
+                  <button class="nav-link" type="button">
+                   Logout
+                  </button>
+                </Link>
               </div>
            
             </div>

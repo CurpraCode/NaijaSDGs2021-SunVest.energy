@@ -8,21 +8,18 @@ import Reset from "./components/Reset";
 import How from "./components/How";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
-import {AuthContextProvider} from "./context/Context"
 
 function App() {
   return (
-   
     <Router>
-       <AuthContextProvider>
-       <Switch>
+      <Switch>
         <Route exact path="/dashboard">
           <Dashboard />
         </Route>
         <Route exact path="/">
           <Sunvest />
-         </Route> 
-                <Route exact path="/market">
+        </Route>
+        <Route exact path="/market">
           <Marketplace />
         </Route>
         <Route exact path="/login">
@@ -32,7 +29,7 @@ function App() {
           <Reset />
         </Route>
         <Route exact path="/signup">
-        <SignUp/>
+          <SignUp />
         </Route>
         <Route exact path="/contact">
           <Contact />
@@ -41,9 +38,7 @@ function App() {
           <How />
         </Route>
       </Switch>
-       </AuthContextProvider>
     </Router>
-    
   );
 }
 
