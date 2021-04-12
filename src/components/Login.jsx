@@ -1,33 +1,9 @@
-import React, {useContext, useState} from 'react';
+import React from 'react';
 import BodyFlex from "../components/common/BodyFlex";
 import Header from "../components/common/Header";
 import {Link} from "react-router-dom";
-import {AuthContext, SIGNIN} from "../context";
-import {login} from "../queries/auth";
-import {Redirect} from "react-router-dom";
 
 function Login() {
-  //const { register, handleSubmit } = useForm();
-  const [passwordType, setPasswordType] = useState(true);
-
-  const { authState, dispatch } = useContext(AuthContext);
-
-  if (authState) {
-    return <Redirect to="/" />;
-  }
-
-  const handleLogin = async (data) => {
-    try {
-      // setLoading(true);
-      const res = await login(data);
-      
-      dispatch({ type: SIGNIN, payload: res.data });
-      console.log(res);
-    } catch (error) {
-      console.log(error.response?.data?.message || 'Login failed');
-    }
-  };
-
     return (
         <div className="bg-env">
             <Header/>
@@ -35,7 +11,7 @@ function Login() {
           <BodyFlex/>
  
            <div>
-             <form className="was-validated"  onSubmit={handleLogin}>
+             <form className="was-validated">
                <div className="form-check">
                  <input
                    type="email"
@@ -51,15 +27,17 @@ function Login() {
                    class="form-control"
                    id="validationFormCheck2"
                    placeholder="password"
-                   type={passwordType ? 'password' : 'text'}
-                   onClick={() => setPasswordType(!passwordType)}
+                   type="password"
                    required
                  />
                </div>
            
                <div className="mb-1">
                  <button className="btn btn-primary" type="submit" >
-                   Sign In
+                 <Link to="/signup">
+                 Sign In
+                    </Link>
+                  
                  </button>
                </div>
                <div>
