@@ -36,6 +36,9 @@
   padding-top: 20px;
   text-align: center;
 }
+li{
+  color:white;
+}
 .box {
   padding: 2rem;
   max-width: 800px;

@@ -2,6 +2,7 @@ import React from "react";
 import { ReactComponent as WhiteStar } from "../../components/assets/starwhite.svg";
 import { ReactComponent as Social } from "../../components/assets/social.svg";
 // import "./Sunvest.css";
+import {Link} from "react-router-dom";
 
 function Footer() {
   return (
@@ -21,11 +22,12 @@ function Footer() {
         <div className="menu">
           <h3>Main Menu</h3>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact Us</li>
-            <li>Sign In</li>
-            <li>Sign Up</li>
+            <Link to="/"><li>Home</li></Link>
+            <Link to="/how"><li>About</li></Link>
+            <Link to="/contact"><li>Contact Us</li></Link>
+            <Link to="/signup"> <li>Sign Up</li></Link>
+            <Link to="/login"> <li>Sign In</li></Link>
+       
           </ul>
         </div>
         <div className="contact">
